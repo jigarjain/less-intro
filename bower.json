@@ -22,7 +22,6 @@
   ],
   "dependencies": {
     "reveal.js": "~2.6.2",
-    "jquery": "~2.1.1",
-    "highlight": "~7.0.1"
+    "jquery": "~2.1.1"
   }
 }
