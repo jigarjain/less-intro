@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="description" content="A presentation on how LESS can make it easy to write CSS">
         <meta name="author" content="Jigar Jain">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-        <title>LESS - An introduction</title>
+        <title>Simplifying CSS using LESS</title>
 
         <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
         <link rel="stylesheet" href="assets/css/app.css">
@@ -31,80 +31,76 @@
                     <p>No brownie points for answering it</p>
                 </section>
 
-                <section>
-                    <section class="css-quotes">
-                        <h1>CSS Sucks*</h1>
-                        <blockquote>
-                            I can't even centralize things.
-                        </blockquote>
-                        <blockquote>
-                            I find it not readable at all
-                        </blockquote>
-                        <blockquote>
-                            Could have finished this project in 1/10 the time with tables than it took with CSS
-                        </blockquote>
-                        <blockquote>
-                            I'll use CSS for my fonts and colors, but I'm going back to tables for layout, TYVM
-                        </blockquote>
-                        <small>*Not true</small>
-                    </section>
+                <section class="css-quotes">
+                    <h1>CSS Sucks*</h1>
+                    <blockquote>
+                        I can't even centralize things.
+                    </blockquote>
+                    <blockquote>
+                        I find it not readable at all
+                    </blockquote>
+                    <blockquote>
+                        Could have finished this project in 1/10 the time with tables than it took with CSS
+                    </blockquote>
+                    <blockquote>
+                        I'll use CSS for my fonts and colors, but I'm going back to tables for layout, TYVM
+                    </blockquote>
+                    <small>*Not true</small>
+                </section>
 
-                    <section class="cssfix">
-                        <img src="assets/img/cssfix.gif">
-                        <small>Me, Everyday</small>
-                    </section>
+                <section class="cssfix">
+                    <img src="assets/img/cssfix.gif">
+                    <small>Me, Everyday</small>
+                </section>
+
+                <section class="real-css-probs">
+                    <h1>REAL CSS Problems</h1>
+                    <ol>
+                        <li>Huge Files (Facebook had around 2MB of CSS)</li>
+                        <li>Sphagetti Code</li>
+                        <li>Not Dynamic or Programmable</li>
+                        <li>It's CSS</li>
+                    </ol>
                 </section>
 
                 <section>
-                    <section class="real-css-probs">
-                        <h1>REAL CSS Problems</h1>
-                        <ol>
-                            <li>Huge Files (Facebook had around 2MB of CSS)</li>
-                            <li>Sphagetti Code</li>
-                            <li>Not Dynamic or Programmable</li>
-                            <li>It's CSS</li>
-                        </ol>
-                    </section>
+                    <h1>#1 - Huge File(s)</h1>
+                    <div class="conversation">
+                        <p><strong>Suresh</strong>: I will break down the CSS into multiple files & include them in HTML.</p>
+                        <p><strong>Ramesh</strong>: Loading multiple files will increase page load time.</p>
+                        <p><strong>Suresh</strong>: Oops!</p>
+                    </div>
+                </section>
 
-                    <section>
-                        <h1>#1 - Huge File(s)</h1>
-                        <div class="conversation">
-                            <p><strong>Suresh</strong>: I will break down the CSS into multiple files & include them in HTML.</p>
-                            <p><strong>Ramesh</strong>: Loading multiple files will increase page load time.</p>
-                            <p><strong>Suresh</strong>: Oops!</p>
-                        </div>
-                    </section>
+                <section>
+                    <h1>#2 - Sphagetti Code</h1>
+                    <div class="conversation">
+                        <p><strong>Suresh</strong>: I changed color of this text but it is getting overriden.</p>
+                        <p><strong>Ramesh</strong>: Dude! Don't ask me. I worked on that long back.</p>
+                        <p><strong>Suresh</strong>: Huh?</p>
+                    </div>
+                </section>
 
-                    <section>
-                        <h1>#2 - Sphagetti Code</h1>
-                        <div class="conversation">
-                            <p><strong>Suresh</strong>: I changed color of this text but it is getting overriden.</p>
-                            <p><strong>Ramesh</strong>: Dude! Don't ask me. I worked on that long back.</p>
-                            <p><strong>Suresh</strong>: Huh?</p>
-                        </div>
-                    </section>
+                <section>
+                    <h1>#3 - Not Dynamic</h1>
+                    <div class="conversation">
+                        <p><strong>Suresh</strong>: Can I change this anchor text color all over the site by making only 1 change?</p>
+                        <p><strong>Ramesh</strong>: You must be dreaming.</p>
+                        <p><strong>Suresh</strong>: I wish it was possible :(</p>
+                    </div>
+                </section>
 
-                    <section>
-                        <h1>#3 - Not Dynamic</h1>
-                        <div class="conversation">
-                            <p><strong>Suresh</strong>: Can I change this anchor text color all over the site by making only 1 change?</p>
-                            <p><strong>Ramesh</strong>: You must be dreaming.</p>
-                            <p><strong>Suresh</strong>: I wish it was possible :(</p>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h1>#4 - It's CSS</h1>
-                        <div class="conversation">
-                            <p><strong>Suresh</strong>: We have got the design. Lets start working with CSS.</p>
-                            <p><strong>Ramesh</strong>: You mad bro? I am just doing backend. You do styling.</p>
-                            <p><strong>Suresh</strong>: Ok :/</p>
-                        </div>
-                    </section>
+                <section>
+                    <h1>#4 - It's CSS</h1>
+                    <div class="conversation">
+                        <p><strong>Suresh</strong>: We have got the design. Lets start working with CSS.</p>
+                        <p><strong>Ramesh</strong>: You mad bro? I am just doing backend. You do styling.</p>
+                        <p><strong>Suresh</strong>: Ok :/</p>
+                    </div>
                 </section>
 
                 <section class="jigar-quote">
-                    <h3>Write CSS the way you would write programs</h3>
+                    <h3>Write CSS the way you write programs</h3>
                     <p>- Jigar Jain</p>
                 </section>
 
@@ -286,13 +282,16 @@
                     <ul class="details">
                         <li>Mumbai guy living in Bangalore</li>
                         <li>Working with cool people at Grallo</li>
-                        <li>Trying to build beautiful web apps</li>
+                        <li>Loves to build beautiful web apps</li>
                         <li>Receives emails on <strong>jjain91@gmail.com</strong></li>
-                        <li>Identified by <strong><a href="https://twitter.com/ragij">@ragiJ</a></strong> on twitter</li>
-                        <li>Does not have any visiting card</li>
+                        <li>Identified as <strong><a href="https://twitter.com/ragij">@ragiJ</a></strong> on twitter</li>
+                        <li>Does not have business card</li>
                     </ul>
                     <p class="hiring">Psst! <strong>We are hiring</strong> at Grallo</p>
-                    <h3 class="close">Thank you :)</h3>
+                </section>
+
+                <section>
+                    <h1>Thank You :)</h1>
                 </section>
             </div> <!-- /.slides -->
 
